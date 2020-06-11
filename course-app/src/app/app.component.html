@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Course App</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav"
+       [ngClass]="hasLoggedUser ? 'justify-content-between' : 'justify-content-end'">
+    <ul class="navbar-nav" *ngIf="hasLoggedUser">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/courses/table-list">Table View</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/courses/card-list'">Cards View</a>
+      </li>
+    </ul>
+
+    <span class="navbar-text">
+      <a *ngIf="hasLoggedUser"
+        class="btn btn-link"
+        routerLink="profile">Profile</a>
+
+      <button *ngIf="hasLoggedUser"
+        class="btn btn-link"
+        (click)="onLogout()">Logout</button>
+
+      <a *ngIf="!hasLoggedUser"
+         class="btn btn-link"
+         routerLink="auth/login">Login</a>
+    </span>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,20 @@
+<div class="card mb-2">
+  <div class="card-body">
+    <h5 class="card-title">{{ course.title | format}}</h5>
+    <p class="card-text">{{ course.description | format: 100 }}</p>
+
+    <div>
+      <div>
+        <span>Rating: {{course.rating | number: '1.1-2'}}</span>
+      </div>
+
+      <div>
+        <span>Created at: {{course.createdDate | date}}</span>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" (click)="addFavourite()">Add to favourites</button>
+    <a *ngIf="isAdmin" class="btn btn-outline-success ml-2" [routerLink]="['/courses/add', course.id]">Update</a>
+    <button *ngIf="isAdmin" class="btn btn-outline-warning ml-2" (click)="onDeleteClick()">Delete</button>
+  </div>
+</div>

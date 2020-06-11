@@ -1,0 +1,34 @@
+<h3 class="mb-4 text-primary text-center">Courses Table View</h3>
+
+<div class="d-flex mb-4">
+  <!-- <div class="mr-2">
+    <input class="form-control" type="text" [(ngModel)]="courseInput">
+    <p *ngIf="courseInput">You select: {{courseInput}}</p>
+  </div> -->
+
+  <div *ngIf="isAdmin" class="col-md-2">
+    <a class="btn btn-outline-info btn-block" routerLink="/courses/add">Add new</a>
+  </div>
+</div>
+
+<p *ngIf="showError" [class.text-danger]="showError">You cannot empty string for name.</p>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Title</th>
+    <th scope="col">Director</th>
+    <th scope="col">Rating</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let courses of courses; let i = index">
+    <th scope="row">{{i + 1}}</th>
+    <td [class.text-muted]="courses.rating > 6">{{courses.title}}</td>
+    <td [class.text-muted]="courses.rating > 6">{{courses.director}}</td>
+    <td [ngClass]="{'text-danger': courses.rating > 6}"
+        [ngStyle]="{'color': courses.rating < 6 ? 'blue' : 'orange'}">{{courses.rating}}</td>
+  </tr>
+  </tbody>
+</table>

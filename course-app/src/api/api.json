@@ -1,0 +1,121 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin Admin",
+      "email": "admin@admin.com",
+      "password": "qwerty",
+      "role": "user",
+      "favouriteMovies": ""
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "john@doe.bg",
+      "password": "qwerty",
+      "role": "user",
+      "favouriteMovies": ""
+    },
+    {
+      "name": "Zdravka Strahinova",
+      "email": "zdravkastrahinova1022@gmail.com",
+      "password": "123456",
+      "rePassword": "123456",
+      "id": 3,
+      "role": "user",
+      "favouriteMovies": ""
+    },
+    {
+      "name": "Hristo Nikolaev Vladimirov",
+      "email": "hristo.vladimirov1998@gmail.com",
+      "password": "qwerty",
+      "rePassword": "qwerty",
+      "id": 4,
+      "role": "user",
+      "favouriteMovies": "Trolls World Tour, Dune, Code 8, The Platform, The Gentlemen"
+    },
+    {
+      "name": "Katrin Deimitrova",
+      "email": "katq.dimitrova@gmail.com",
+      "password": "qwerty",
+      "rePassword": "qwerty",
+      "id": 5,
+      "role": "user",
+      "favouriteMovies": ""
+    }
+  ],
+  "courses": [
+    {
+      "id": 2,
+      "title": "Dune",
+      "description": "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
+      "director": "Denis Villeneuve",
+      "rating": 5.3,
+      "createdDate": "2020-05-05"
+    },
+    {
+      "id": 3,
+      "title": "Code 8",
+      "description": "A super-powered construction worker falls in with a group of criminals in order to raise the funds to help his ill mother.",
+      "director": "Jeff Chan",
+      "rating": 6.1,
+      "createdDate": "2020-05-05"
+    },
+    {
+      "id": 4,
+      "title": "The Gentlemen",
+      "description": "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.",
+      "director": "Guy Ritchie",
+      "rating": 8,
+      "createdDate": "2020-05-05"
+    },
+    {
+      "id": 5,
+      "title": "The Platform",
+      "description": "A vertical prison with one cell per level. Two people per cell. One only food platform and two minutes per day to feed from up to down. An endless nightmare trapped in The Hole.",
+      "director": "Galder Gaztelu-Urrutia",
+      "rating": 7,
+      "createdDate": "2020-05-05"
+    },
+    {
+      "id": 6,
+      "title": "Joker",
+      "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+      "director": "Todd Phillips",
+      "rating": 8.5,
+      "createdDate": "2020-05-05"
+    },
+    {
+      "id": 7,
+      "title": "Avengers: Endgame",
+      "description": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+      "director": "Anthony Russo",
+      "rating": 8.4,
+      "createdDate": "2020-05-05"
+    },
+    {
+      "id": 8,
+      "title": "The Godfather",
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "director": "Francis Ford Coppola",
+      "rating": 9.2,
+      "createdDate": "2020-05-05"
+    },
+    {
+      "id": 9,
+      "title": "Ford v Ferrari",
+      "description": "American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order to defeat Ferrari at the 24 Hours of Le Mans in 1966.",
+      "director": "James Mangold",
+      "rating": 8.1,
+      "createdDate": "2020-05-05"
+    },
+    {
+      "id": 10,
+      "title": "Knives Out",
+      "description": "A detective investigates the death of a patriarch of an eccentric, combative family.",
+      "director": "Rian Johnson",
+      "rating": 7.9,
+      "createdDate": "2020-05-05"
+    }
+  ]
+}
